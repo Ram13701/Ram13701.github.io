@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix. India</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+    body{
+        background: black;
+        color: white;
+    }
+    .header{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./Netflix\ background.jpeg');
+        background-size: cover;
+        background-position: center;
+        padding: 10px 8%;
+        position: relative;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .logo {
+        cursor: pointer;
+        width: 150px; 
+    }
+    nav button{
+        border: 0;
+        outline: 0;
+        background: red;
+        color: white;
+        padding: 7px;
+        font-size: 12px;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+        height: 32px;
+        width: 80px;
+        
+       
+    }
+    select{
+        display: inline-flex;
+        align-items: center;
+        background: transparent;
+        border: 1px solid white;
+        padding: 7px 7px;
+        color: white;
+        height: 32px;
+        width: 80px;
+    }
+    option{
+        color: black;
+    }
+    .header-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        margin-top: 100px;
+    }
+    .header-content h1{
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 600px;
+        max-width: 650px;
+    }
+    .header-content h3{
+        font-weight: 400px;
+        margin-bottom: 20px;
+    }
+    .email-signup{
+        background: white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+    .email-signup input{
+        flex: 1;
+        border: 0;
+        outline: 0;
+        margin-left: 20px;
+
+    }
+    .email-signup button{
+        background: red;
+        border: 0;
+        outline: 0;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 15px 30px;
+    }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <nav>
+        <img src="./Netflixlogo.png" class="logo">
+        <div>
+            <select name="language" id="language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+            <button>Sign In</button>
+        </div>
+    </nav>
+    <div class="header-content">
+    <h1>
+        Unlimited movies, TV shows and more</h1>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="email-signup">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+</div>
+
+    
+</body>
+</html>
