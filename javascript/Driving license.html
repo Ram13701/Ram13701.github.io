@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: bisque;
+    }
+</style>
+<body>
+    <table border="1px">
+        <tr>
+            <td>Date</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Result</td>
+        </tr>
+        <tr>
+            <script>
+                let Name=prompt("Enter the name")
+                let Age=prompt("Enter the age")
+                document.write("<td>"+Date()+"</td><td>"+Name+"</td><td>"+Age+"</td>")
+                
+                if(Age<=18){
+                    document.write("<td class='red'>"+ "Not eligible for dl"+"</td>")
+                }else{
+                    document.write("<td class='green'>" + "Eligible for dl"+ "</td>")
+                }
+               
+            </script>
+        </tr>
+
+    </table>
+</body>
+</html>

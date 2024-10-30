@@ -1,0 +1,39 @@
+body {
+    background-image: url('./images/imagered.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0; /* Removes default margin for the body */
+    height: 100vh; /* Ensures the body takes the full height of the viewport */
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.navbar{
+    background-color: transparent;
+    border-bottom: none;
+    background-color: rgba(15, 14, 14, 0.3);
+    display: flex;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.right{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+  }
+  .middle{
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
+  }
+/* .content{
+    display: flex;
+   margin:200px 200px;
+   width:400px;
+    color: white;
+   font-weight: 800px;
+} */
+.content2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(254, 0, 0);
+}

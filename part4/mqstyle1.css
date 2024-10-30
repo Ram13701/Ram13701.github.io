@@ -1,0 +1,54 @@
+#container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+.banner{
+    width: 1000px;
+    height: 200px;
+    background-color: brown;
+}
+.left{
+    width: 500px;
+    height: 400px;
+    float: left;
+    background-color:blue;
+}
+.right{
+    width: 500px;
+    height: 400px;
+    float: right;
+    background-color:yellow;
+}
+@media screen and (max-width:999px){
+    #container{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    .left{
+         width: 30%;
+        background-color:blanchedalmond;
+        color: white;
+    }
+    .right{
+        width: 70px;
+        background-color:rgb(134, 49, 136);
+
+    }
+    .banner img{
+        width: 100%;
+    }
+    
+}
+@media screen  and (max-width:600px)
+{
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}

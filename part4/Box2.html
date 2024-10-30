@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 1000px;
+        height: 400px;
+        border: 1px solid red;
+        background-color: green;
+        display: flex;
+        // justify-content: center;
+        // justify-content: space-between;
+        justify-content: space-around;
+        // align-items: flex-start;
+        align-items: center;
+        // align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        //flex-direction: column;
+          
+      }
+      .one {
+        width: 45%;
+        height: 200px;
+        background-color: green;
+      }
+      @media screen and (max-width: 700px) {
+        #box{
+            flex-direction: column;
+        }
+        .one{
+            background-color: yellow;
+            width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="one">CSS</div>
+      <div class="one">CSS</div>
+    </div>
+  </body>
+</html>

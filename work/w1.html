@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator for Mobile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .send-otp-btn, .verify-otp-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .send-otp-btn:hover, .verify-otp-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OTP Verification</h1>
+        <div>
+            <input type="text" id="mobileNumber" placeholder="Enter your mobile number">
+            <button class="send-otp-btn" onclick="sendOTP()">Send OTP</button>
+        </div>
+        <div style="margin-top: 20px;">
+            <input type="number" id="otpInput" placeholder="Enter OTP">
+            <button class="verify-otp-btn" onclick="verifyOTP()">Verify OTP</button>
+        </div>
+        <div id="result" style="margin-top: 20px;"></div>
+    </div>
+    
+<script>
+        function sendOTP() {
+    const mobileNumber = document.getElementById('mobileNumber').value;
+    // Perform an AJAX request to send the OTP to the mobile number
+    // This will usually involve calling your backend API
+    console.log(`Sending OTP to ${mobileNumber}`);
+    document.getElementById('result').textContent = `OTP sent to ${mobileNumber}`;
+}
+
+function verifyOTP() {
+    const otp = document.getElementById('otpInput').value;
+    // Perform an AJAX request to verify the OTP entered by the user
+    // This will involve calling your backend API
+    console.log(`Verifying OTP: ${otp}`);
+    document.getElementById('result').textContent = 'OTP verified!';
+}
+    </script>
+</body>
+</html>
