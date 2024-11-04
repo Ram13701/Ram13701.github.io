@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fname" placeholder="name" onblur="demo()">
+    <span id="txt"></span>
+    <script>
+        function demo(){
+            const x=document.getElementById("fname").value
+            if(x==""){
+                document.getElementById('txt').innerHTML="Field should not be empty"
+                document.getElementById('fname').style.background='red'
+            }else{
+                 document.getElementById('txt').innerHTML="Thank you "+x
+                   document.getElementById('fname').style.background='yellow'
+            }
+        }
+    </script>
+</body>
+</html>

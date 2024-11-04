@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fname" placeholder="age" onfocus="demo()" onblur="demo1()">
+    <span id="txt"></span>
+    <script>
+        function demo(){
+            document.getElementById("txt").innerHTML="enter name"
+        }
+        function demo1(){
+            document.getElementById("txt").innerHTML=""
+        }
+    </script>
+</body>
+</html>
