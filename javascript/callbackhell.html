@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="txt"></h2>
+    <script>
+        function demo(){
+            console.log("Start Stove")
+            setTimeout(function(){
+                console.log("Place bowl")
+                setTimeout(function(){
+                    console.log("Add water")
+                    setTimeout(function(){
+                        console.log('add powder ,milk and sugar')
+                        setTimeout(function(){
+                            console.log("boil it")
+                            setTimeout(function(){
+                                console.log("serve it")
+                            },2000)
+                        },2000)
+                    },2000)
+                },2000)
+            },2000)
+        }
+        demo()
+    </script>
+</body>
+</html>
